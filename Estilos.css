@@ -1,0 +1,20 @@
+body {background-color: rgb(177, 201, 245);
+border: 0;
+margin: 0;
+
+}
+
+h1 {color: rgba(173, 17, 17, 0.726);
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+}
+
+h2 {color: rgba(55, 150, 98, 0.726);
+font-family: fantasy;
+font-size: 40px;
+}
+
+h3 {color: rgba(0, 6, 22, 0.726);
+font-family: cursive;
+font-size: 40px;
+}
