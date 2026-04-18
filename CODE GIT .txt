@@ -1,0 +1,30 @@
+// LOGIARSE
+$ git config --global user.name "bodoque"
+
+$ git config --global user.email "epaytan4@gmail.com"
+
+// HACER MAIN
+$ git config --global init.defaultBranch main
+
+// INICIAR REPOSITORIO/subir
+$ git init
+ echo ".vs/" .>> gitignore
+..$ git add .
+$ git commit -m "{TEXTO}"
+$ git remote add origin {URL}
+$ git push -u origin main
+//ACTUALIZAR
+$ git pull origin main
+$ git add .
+$ git commit -m "{texto}"
+$ git push
+
+//CLONAR 
+//nueva carpeta e iniciar denuvo
+git clone {URL}
+ 
+//cambiar repositorio
+git add .
+git commit -m “texto”
+git remote set-url origin {url}
+git push
