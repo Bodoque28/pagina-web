@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Callejero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">SC</span>
+        <span>
+          <strong>Sabor Callejero</strong>
+          <small>Fast food urbana con estilo</small>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#menu-panel">Ver menu</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow">Sabor intenso, imagen profesional</span>
+        <h1>Comida rapida que se ve tan bien como sabe.</h1>
+        <p>
+          Hamburguesas, hot dogs, papas loaded, alitas y combos callejeros en una pagina
+          moderna con apartados interactivos, promos visibles y contacto directo para delivery.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu-panel">Ver menu completo</a>
+          <a class="btn btn-secondary" href="#pedidos">Pedir ahora</a>
+        </div>
+
+        <div class="hero-stats">
+          <article>
+            <strong>+25</strong>
+            <span>Opciones rapidas</span>
+          </article>
+          <article>
+            <strong>20 min</strong>
+            <span>Entrega promedio</span>
+          </article>
+          <article>
+            <strong>4.9/5</strong>
+            <span>Calificacion local</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="plate-glow"></div>
+          <div class="plate">
+            <div class="food-layer bun-top"></div>
+            <div class="food-layer lettuce"></div>
+            <div class="food-layer tomato"></div>
+            <div class="food-layer cheese"></div>
+            <div class="food-layer meat"></div>
+            <div class="food-layer bun-bottom"></div>
+          </div>
+          <div class="floating-note">
+            <span>Combo estrella</span>
+            <strong>Hamburguesa Royal + Papas + Gaseosa</strong>
+            <p>S/.19.90</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section quick-highlights">
+      <article>
+        <span>01</span>
+        <h3>Menu por categorias</h3>
+        <p>Al presionar cada opcion se abre un apartado con hamburguesas y mas comida rapida.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Promos visibles</h3>
+        <p>Ofertas diarias y semanales para impulsar pedidos y resaltar productos estrella.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Contacto directo</h3>
+        <p>Telefono de delivery, correo, redes sociales y formulario rapido en una sola vista.</p>
+      </article>
+    </section>
+
+    <section class="section menu-panel" id="menu-panel">
+      <div class="section-heading">
+        <span>Menu interactivo</span>
+        <h2>Explora cada apartado de Sabor Callejero</h2>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Categorias del menu">
+        <button class="tab-button active" data-tab="hamburguesas" type="button">Hamburguesas</button>
+        <button class="tab-button" data-tab="perros" type="button">Perros calientes</button>
+        <button class="tab-button" data-tab="alitas" type="button">Alitas y papas</button>
+        <button class="tab-button" data-tab="combos" type="button">Combos y bebidas</button>
+      </div>
+
+      <div class="tab-panels">
+        <section class="tab-panel active" id="hamburguesas">
+          <div class="panel-intro">
+            <h3>Hamburguesas callejeras</h3>
+            <p>Recetas con carne jugosa, pan brioche, salsas caseras y presentacion premium.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card warm">
+              <h4>Street Burger</h4>
+              <p>Doble carne, cheddar, cebolla crispy y salsa de la casa.</p>
+              <strong>S/. 9.90</strong>
+            </article>
+            <article class="menu-card bright">
+              <h4>BBQ Melt</h4>
+              <p>Carne smash, tocino, queso fundido y toque ahumado BBQ.</p>
+              <strong>S/. 14.90</strong>
+            </article>
+            <article class="menu-card dark">
+              <h4>Picante Urbana</h4>
+              <p>Jalapenos, pepper jack, pepinillos y mayo spicy.</p>
+              <strong>S/. 10.90</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="perros">
+          <div class="panel-intro">
+            <h3>Perros calientes y wraps</h3>
+            <p>Opciones callejeras para quienes buscan algo rapido, potente y facil de pedir.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card gold">
+              <h4>Dog Clasico XL</h4>
+              <p>Salchicha premium, papitas trituradas, salsas y cebolla.</p>
+              <strong>S/. 8.50</strong>
+            </article>
+            <article class="menu-card green">
+              <h4>Wrap Crispy</h4>
+              <p>Pollo crujiente, lechuga fresca, queso y salsa ranch.</p>
+              <strong>S/. 9.30</strong>
+            </article>
+            <article class="menu-card warm">
+              <h4>Dog Calle 90</h4>
+              <p>Tocino, queso, maiz dulce y lluvia de papas crocantes.</p>
+              <strong>S/. 8.90</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="alitas">
+          <div class="panel-intro">
+            <h3>Alitas, papas y extras</h3>
+            <p>Perfecto para compartir o para armar una noche de antojo completo.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card dark">
+              <h4>Alitas Hot Fire</h4>
+              <p>8 piezas en salsa picante con dip cremoso.</p>
+              <strong>S/. 10.90</strong>
+            </article>
+            <article class="menu-card sweet">
+              <h4>Papas Loaded</h4>
+              <p>Papas fritas con cheddar, bacon y salsa especial.</p>
+              <strong>S/. 7.80</strong>
+            </article>
+            <article class="menu-card bright">
+              <h4>Onion Crunch</h4>
+              <p>Aros de cebolla y nuggets crujientes para compartir.</p>
+              <strong>S/. 8.40</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="combos">
+          <div class="panel-intro">
+            <h3>Combos y bebidas</h3>
+            <p>Pedidos listos para delivery con ahorro y presentacion clara para venta rapida.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card green">
+              <h4>Combo Burger Max</h4>
+              <p>Hamburguesa, papas grandes y gaseosa de 500 ml.</p>
+              <strong>S/. 14.90</strong>
+            </article>
+            <article class="menu-card gold">
+              <h4>Combo Street Duo</h4>
+              <p>Dos perros calientes, papas medianas y dos bebidas.</p>
+              <strong>S/. 17.50</strong>
+            </article>
+            <article class="menu-card sweet">
+              <h4>Combo Party Box</h4>
+              <p>Alitas, nuggets, papas loaded y cuatro gaseosas.</p>
+              <strong>S/. 26.00</strong>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section promo-section" id="promociones">
+      <div class="section-heading">
+        <span>Promociones</span>
+        <h2>Ofertas que invitan a pedir ya</h2>
+      </div>
+
+      <div class="promo-grid">
+        <article class="promo-card feature">
+          <small>Promo principal</small>
+          <h3>2x1 en Street Burger todos los martes desde las 6:00 p. m.</h3>
+          <p>Ideal para atraer mas pedidos por delivery y mantener la marca activa en redes.</p>
+        </article>
+        <article class="promo-card">
+          <small>Delivery</small>
+          <h3>Envio gratis en pedidos mayores a $18</h3>
+          <p>Disponible en zonas cercanas durante horario nocturno.</p>
+        </article>
+        <article class="promo-card">
+          <small>Fin de semana</small>
+          <h3>Combo familiar con 15% de descuento</h3>
+          <p>Perfecto para compartir hamburguesas, papas y bebidas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accordion-section">
+      <div class="section-heading">
+        <span>Mas apartados</span>
+        <h2>Abre cada bloque para ver mas informacion</h2>
+      </div>
+
+      <div class="accordion">
+        <details open>
+          <summary>Por que elegir Sabor Callejero</summary>
+          <p>Imagen moderna, menu claro, delivery rapido y presentacion pensada para vender tanto en web como en redes sociales.</p>
+        </details>
+        <details>
+          <summary>Horarios de atencion</summary>
+          <p>Lunes a jueves de 5:30 Pm. a 12:30 Am. Viernes a domingo de 5:00 Pm. a 12.00 Am.</p>
+        </details>
+        <details>
+          <summary>Zonas de cobertura delivery</summary>
+          <p>Centro, zona comercial, barrios residenciales cercanos y oficinas alrededor del punto principal.</p>
+        </details>
+        <details>
+          <summary>Metodos de pago</summary>
+          <p>Efectivo, transferencia, tarjeta, pago contra entrega y billeteras digitales (Yape, plin, prexpe, etc).</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section orders-section" id="pedidos">
+      <div class="section-heading">
+        <span>Pedidos</span>
+        <h2>Haz tu pedido por delivery o escribe directo</h2>
+      </div>
+
+      <div class="orders-grid">
+        <article class="contact-card primary-contact">
+          <small>Numero delivery</small>
+          <a href="tel:+51972488688">+51 972 488 688</a>
+          <p>Llamadas y WhatsApp para pedidos rapidos.</p>
+        </article>
+        <article class="contact-card">
+          <small>Correo de contacto</small>
+          <a href="mailto:pedidos@saborcallejero.com">pedidos@saborcallejero.com</a>
+          <p>Consultas, cotizaciones y atencion al cliente.</p>
+        </article>
+        <article class="contact-card">
+          <small>Tiempo estimado</small>
+          <strong>20 a 35 min</strong>
+          <p>Dependiendo de zona, clima y volumen de pedidos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section social-section" id="contacto">
+      <div class="section-heading">
+        <span>Redes sociales</span>
+        <h2>Conecta con la marca en todos sus canales</h2>
+      </div>
+
+      <div class="social-grid">
+        <a class="social-card" href="#" aria-label="Instagram de Sabor Callejero">
+          <strong>Instagram</strong>
+          <p>@saborcallejero</p>
+        </a>
+        <a class="social-card" href="#" aria-label="Facebook de Sabor Callejero">
+          <strong>Facebook</strong>
+          <p>Sabor Callejero Oficial</p>
+        </a>
+        <a class="social-card" href="#" aria-label="TikTok de Sabor Callejero">
+          <strong>TikTok</strong>
+          <p>@saborcallejerofood</p>
+        </a>
+        <a class="social-card" href="#" aria-label="WhatsApp de Sabor Callejero">
+          <strong>WhatsApp</strong>
+          <p>Pedidos y soporte inmediato</p>
+        </a>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+        <input type="text" name="asunto" placeholder="Asunto" required>
+        <input type="text" name="mensaje" placeholder="Escribe tu mensaje o pedido" required>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Sabor Callejero | Comida rapida, promociones y delivery con imagen profesional.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
