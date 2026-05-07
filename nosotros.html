@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Burger | Nosotros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="nosotros">
+  <header class="site-shell">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="Productos/Logo.png" alt="Logo de Street Burger">
+        <span class="brand-copy">
+          <strong>Street Burger</strong>
+          <small>Comida rapida urbana</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-link="inicio">Inicio</a>
+        <a href="productos.html" data-link="productos">Productos</a>
+        <a href="nosotros.html" data-link="nosotros">Nosotros</a>
+        <a href="contactos.html" data-link="contactos">Contactos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-shell">
+    <section class="page-hero compact-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Pagina Nosotros</span>
+        <h1>Equipo desarrollador del sitio web</h1>
+      </div>
+    </section>
+
+    <section class="slider" data-slider>
+      <div class="slides">
+        <article class="slide active theme-green"><div class="slide-content"><small>Slider 01</small><h2>Diseño, desarrollo e identidad visual para la marca</h2></div></article>
+        <article class="slide theme-night"><div class="slide-content"><small>Slider 02</small><h2>Equipo enfocado en experiencia de usuario y estructura web</h2></div></article>
+        <article class="slide theme-fire"><div class="slide-content"><small>Slider 03</small><h2>Presentacion academica y profesional con enfoque practico</h2></div></article>
+        <article class="slide theme-gold"><div class="slide-content"><small>Slider 04</small><h2>Contenido pensado para una empresa gastronomica moderna</h2></div></article>
+      </div>
+      <div class="slider-controls">
+        <button type="button" class="slider-btn prev" aria-label="Imagen anterior">&#10094;</button>
+        <div class="slider-dots"></div>
+        <button type="button" class="slider-btn next" aria-label="Imagen siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span class="section-tag">Desarrolladores</span>
+        <h2>Resumen de curriculum vitae</h2>
+      </div>
+      <div class="team-grid">
+        <article class="team-card team-member-card" tabindex="0" data-member="Gerson Zavaleta" data-role="Desarrollador Frontend" data-certificate="Certificado en Desarrollo Web y Diseño de Interfaces">
+          <div class="avatar avatar-one">GZ</div>
+          <h3>Gerson Zavaleta</h3>
+          <p><strong>Habilidades:</strong> HTML, CSS, JavaScript, maquetacion responsive, organizacion de contenido.</p>
+          <p><strong>Programas:</strong> Visual Studio Code, Figma, GitHub, Canva.</p>
+          <p><strong>Certificados:</strong> Desarrollo Web Basico, Diseño de Interfaces y Buenas Practicas Frontend.</p>
+        </article>
+        <article class="team-card team-member-card" tabindex="0" data-member="Maria Torres" data-role="Diseñadora UI/UX" data-certificate="Certificado en Diseño UX y Marketing Digital">
+          <div class="avatar avatar-two">MT</div>
+          <h3>Maria Torres</h3>
+          <p><strong>Habilidades:</strong> UI/UX, prototipado, composicion visual, branding digital.</p>
+          <p><strong>Programas:</strong> Figma, Adobe XD, Photoshop, Illustrator.</p>
+          <p><strong>Certificados:</strong> Diseño UX, Marketing Digital y Experiencia de Usuario.</p>
+        </article>
+        <article class="team-card team-member-card" tabindex="0" data-member="Luis Herrera" data-role="Soporte y Testing Web" data-certificate="Certificado en Testing Web y Gestión de Proyectos Digitales">
+          <div class="avatar avatar-three">LH</div>
+          <h3>Luis Herrera</h3>
+          <p><strong>Habilidades:</strong> soporte tecnico, integracion multimedia, pruebas funcionales y documentacion.</p>
+          <p><strong>Programas:</strong> Trello, Git, Google Workspace, herramientas de testing.</p>
+          <p><strong>Certificados:</strong> Testing Web, Scrum Fundamentals y Gestion de Proyectos Digitales.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="team-modal" id="teamModal" aria-hidden="true">
+    <div class="team-modal-backdrop" data-close-team-modal></div>
+    <div class="team-modal-card" role="dialog" aria-modal="true" aria-labelledby="teamModalTitle">
+      <button class="modal-close" type="button" aria-label="Cerrar" data-close-team-modal>&times;</button>
+      <div class="team-modal-layout">
+        <div class="certificate-visual">
+          <div class="certificate-sheet">
+            <span class="certificate-seal">CERT</span>
+            <strong>Certificado Profesional</strong>
+            <p id="teamModalCertificate"></p>
+          </div>
+        </div>
+        <div class="team-modal-info">
+          <span class="section-tag">Integrante del equipo</span>
+          <h2 id="teamModalTitle"></h2>
+          <p class="modal-description" id="teamModalRole"></p>
+          <p class="modal-message">Seleccionaste a este integrante del equipo desarrollador. Su perfil aporta valor al proyecto con habilidades tecnicas y enfoque profesional.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="site-shell footer-grid">
+      <div>
+        <h3>Empresas referenciales</h3>
+        <div class="reference-logos">
+          <a class="logo-card" href="https://www.mcdonalds.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Productos/Logos de empresas/McDonald's.png" alt="Logo de McDonald's"><span>McDonald's</span></a>
+          <a class="logo-card" href="https://www.burgerking.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Productos/Logos de empresas/Burger King.png" alt="Logo de Burger King"><span>Burger King</span></a>
+          <a class="logo-card" href="https://www.kfc.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Productos/Logos de empresas/Kfc.png" alt="Logo de KFC"><span>KFC</span></a>
+        </div>
+      </div>
+      <div>
+        <h3>Redes sociales</h3>
+        <div class="social-links">
+          <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Productos/Logos de empresas/Instagram.png" alt="Instagram"><span>Instagram</span></a>
+          <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Productos/Logos de empresas/Facebook.png" alt="Facebook"><span>Facebook</span></a>
+          <a class="social-link" href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Productos/Logos de empresas/TikTok.png" alt="TikTok"><span>TikTok</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
