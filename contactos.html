@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Burger | Contactos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=pago-profesional">
+</head>
+<body data-page="contactos">
+  <header class="site-shell">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="Productos/Logo.png" alt="Logo de Street Burger">
+        <span class="brand-copy">
+          <strong>Street Burger</strong>
+          <small>Comida rapida urbana</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-link="inicio">Inicio</a>
+        <a href="productos.html" data-link="productos">Productos</a>
+        <a href="nosotros.html" data-link="nosotros">Nosotros</a>
+        <a href="contactos.html" data-link="contactos">Contactos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-shell">
+    <section class="page-hero compact-hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Pagina de Contactos</span>
+        <h1>Canales de atencion, pedidos y ubicacion</h1>
+      </div>
+    </section>
+
+    <section class="slider showcase-slider" data-slider>
+      <div class="slides">
+        <article class="slide active slide-poster"><img src="Slider/CONTACTOS SLIDER 1.png" alt="Street Burger contactos slider 1"></article>
+        <article class="slide slide-poster"><img src="Slider/CONTACTOS SLIDER 2.png" alt="Street Burger contactos slider 2"></article>
+        <article class="slide slide-poster"><img src="Slider/CONTACTOS SLIDER 3.png" alt="Street Burger contactos slider 3"></article>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev" type="button" aria-label="Imagen anterior">&#10094;</button>
+        <div class="slider-dots" aria-label="Selector de imagenes"></div>
+        <button class="slider-btn next" type="button" aria-label="Imagen siguiente">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="section two-col contact-layout">
+      <div class="content-card" id="pedido-formulario">
+        <span class="section-tag">Formulario</span>
+        <h2>Ingreso de comentarios o pedidos</h2>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="nombre" placeholder="Nombre completo" required>
+          <input type="email" name="correo" placeholder="Correo electronico" required>
+          <input type="text" name="telefono" placeholder="Telefono o WhatsApp" required>
+          <input type="text" name="asunto" placeholder="Asunto del mensaje" required>
+          <textarea name="mensaje" placeholder="Escribe tu comentario, consulta o pedido" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+        <p class="form-message" id="formMessage" aria-live="polite"></p>
+      </div>
+
+      <div class="content-card">
+        <span class="section-tag">Ubicacion</span>
+        <h2>Sucursal principal</h2>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Plaza+de+Armas+de+Lima&output=embed"
+            title="Mapa de la sucursal"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section payment-section" id="metodos-pago">
+      <div class="section-heading">
+        <span class="section-tag">Pago seguro</span>
+        <h2>Metodos de pago disponibles</h2>
+      </div>
+
+      <div class="payment-panel">
+        <div class="payment-tabs" role="tablist" aria-label="Metodos de pago">
+          <button class="payment-tab active" type="button" data-payment-tab="card">Tarjeta</button>
+          <button class="payment-tab" type="button" data-payment-tab="wallet">Monederos digitales</button>
+          <button class="payment-tab" type="button" data-payment-tab="transfer">Transferencia</button>
+        </div>
+
+        <div class="payment-method active" data-payment-panel="card">
+          <div class="payment-grid">
+            <form class="card-form" id="cardPaymentForm">
+              <label>
+                Numero de tarjeta
+                <input id="cardNumber" type="text" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000" autocomplete="cc-number">
+              </label>
+              <div class="card-row">
+                <label>
+                  Vencimiento
+                  <input id="cardExpiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/AA" autocomplete="cc-exp">
+                </label>
+                <label>
+                  CVV
+                  <input id="cardCvv" type="password" inputmode="numeric" maxlength="4" placeholder="***" autocomplete="cc-csc">
+                </label>
+              </div>
+              <label>
+                Nombre del titular
+                <input id="cardHolder" type="text" placeholder="Nombre como aparece en la tarjeta" autocomplete="cc-name">
+              </label>
+              <button class="btn btn-primary" type="submit">Validar tarjeta</button>
+            </form>
+
+            <div class="card-preview" aria-live="polite">
+              <span id="cardBrand">Tarjeta</span>
+              <strong id="cardBank">Banco por reconocer</strong>
+              <p id="cardHint">Ingresa los primeros numeros para detectar tipo de tarjeta y banco estimado.</p>
+              <div class="card-chip"></div>
+              <div id="cardMasked">**** **** **** ****</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-method" data-payment-panel="wallet">
+          <div class="wallet-grid">
+            <button class="wallet-card yape-card" type="button" id="openYapeModal">
+              <img class="wallet-logo-image" src="Logos de empresas/Yape.png" alt="Logo de Yape">
+              <strong>Yape</strong>
+              <small>Escanea el QR para pagar al instante</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="payment-method" data-payment-panel="transfer">
+          <div class="transfer-box">
+            <span class="section-tag">Cuenta bancaria</span>
+            <h3>Transferencia o deposito</h3>
+            <p>Banco: Street Burger Bank</p>
+            <p>Cuenta: 001-245-998877</p>
+            <p>CCI: 002-001-000245998877-11</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="payment-modal" id="yapeModal" aria-hidden="true">
+    <div class="payment-modal-backdrop" data-close-yape></div>
+    <div class="payment-modal-card" role="dialog" aria-modal="true" aria-labelledby="yapeModalTitle">
+      <button class="modal-close" type="button" aria-label="Cerrar" data-close-yape>&times;</button>
+      <div class="yape-modal-layout">
+        <div>
+          <img class="wallet-logo-image large" src="Logos de empresas/Yape.png" alt="Logo de Yape">
+          <h2 id="yapeModalTitle">Pago con Yape</h2>
+          <p>Escanea el codigo QR para registrar el pago del pedido.</p>
+        </div>
+        <div class="receipt-preview" id="receiptPreview">
+          <img class="qr-payment-image" src="Metodos de pago/QR.jpeg" alt="Codigo QR de pago por Yape">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="orderToast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="site-shell footer-grid">
+      <div>
+        <h3>Empresas referenciales</h3>
+        <div class="reference-logos">
+          <a class="logo-card" href="https://www.mcdonalds.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Logos de empresas/McDonald's.png" alt="Logo de McDonald's"><span>McDonald's</span></a>
+          <a class="logo-card" href="https://www.burgerking.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Logos de empresas/Burger King.png" alt="Logo de Burger King"><span>Burger King</span></a>
+          <a class="logo-card" href="https://www.kfc.com" target="_blank" rel="noopener noreferrer"><img class="footer-logo-image" src="Logos de empresas/Kfc.png" alt="Logo de KFC"><span>KFC</span></a>
+        </div>
+      </div>
+      <div>
+        <h3>Redes sociales</h3>
+        <div class="social-links">
+          <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Logos de empresas/Instagram.png" alt="Instagram"><span>Instagram</span></a>
+          <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Logos de empresas/Facebook.png" alt="Facebook"><span>Facebook</span></a>
+          <a class="social-link" href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><img class="footer-social-image" src="Logos de empresas/TikTok.png" alt="TikTok"><span>TikTok</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=pago-profesional"></script>
+</body>
+</html>
